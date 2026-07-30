@@ -292,28 +292,6 @@
       border-color: rgba(20, 184, 166, 0.4);
     }
 
-    .product-img {
-      width: 100%;
-      height: 240px;
-      background-color: #222;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      overflow: hidden;
-    }
-
-    /* SVG Placeholder Graphics for Products */
-    .product-img svg {
-      width: 50%;
-      height: 50%;
-      transition: transform 0.5s ease;
-    }
-
-    .product-card:hover .product-img svg {
-      transform: scale(1.1);
-    }
-
     .product-info {
       padding: 24px;
       display: flex;
@@ -345,7 +323,6 @@
       padding: 10px;
     }
 
-    
     /* About Section */
     .about-box {
       padding: 60px 40px;
@@ -372,31 +349,6 @@
       border: 1px solid var(--glass-border);
       font-size: 0.9rem;
       margin-top: 10px;
-    }
-
-    /* Gallery */
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 16px;
-    }
-
-    .gallery-item {
-      height: 260px;
-      border-radius: 16px;
-      overflow: hidden;
-      position: relative;
-    }
-
-    .gallery-item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.5s ease;
-    }
-
-    .gallery-item:hover img {
-      transform: scale(1.08);
     }
 
     /* Testimonials */
@@ -717,7 +669,6 @@
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#products">Products</a></li>
-        <li><a href="#custom-orders">Custom Orders</a></li>
         <li><a href="#about">About Us</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -735,7 +686,6 @@
       <p class="hero-subtitle">Premium custom 3D printed products and NFC solutions designed to help businesses and individuals stand out.</p>
       <div class="hero-btns">
         <a href="#products" class="btn btn-primary"><i class="fas fa-shopping-bag"></i> Shop Products</a>
-        
       </div>
       
       <!-- Interactive Showcase Pills -->
@@ -761,7 +711,7 @@
 
         <!-- Product 1 -->
         <div class="glass-card product-card reveal">
-                    <div class="product-info">
+          <div class="product-info">
             <h3 class="product-title">Google Review NFC Stand</h3>
             <p class="product-desc">Boost your business reviews seamlessly. Customers just tap their phone to leave a review instantly.</p>
             <div class="product-actions">
@@ -785,7 +735,6 @@
 
         <!-- Product 3 -->
         <div class="glass-card product-card reveal">
-          
           <div class="product-info">
             <h3 class="product-title">Facebook NFC Stand</h3>
             <p class="product-desc">Direct clients to your Facebook page or check-in location with a modern tactile display.</p>
@@ -798,7 +747,6 @@
 
         <!-- Product 4 -->
         <div class="glass-card product-card reveal">
-         
           <div class="product-info">
             <h3 class="product-title">TikTok NFC Stand</h3>
             <p class="product-desc">Perfect for creators and modern venues looking to convert foot traffic into digital followers.</p>
@@ -811,7 +759,6 @@
 
         <!-- Product 5 -->
         <div class="glass-card product-card reveal">
-         
           <div class="product-info">
             <h3 class="product-title">Personalized Name Keychains</h3>
             <p class="product-desc">Custom stylized 3D keychains. Crafted with multi-color options and durable finish.</p>
@@ -824,7 +771,7 @@
 
         <!-- Product 6 -->
         <div class="glass-card product-card reveal">
-                   <div class="product-info">
+          <div class="product-info">
             <h3 class="product-title">Business Name Plates</h3>
             <p class="product-desc">Elegant high-contrast 3D desk plates for executives, offices, and store fronts.</p>
             <div class="product-actions">
@@ -836,7 +783,6 @@
 
         <!-- Product 7 -->
         <div class="glass-card product-card reveal">
-         
           <div class="product-info">
             <h3 class="product-title">Restaurant Table QR/NFC Stands</h3>
             <p class="product-desc">Durable menu access stands combining QR codes and embedded contactless NFC tech.</p>
@@ -847,13 +793,10 @@
           </div>
         </div>
 
-        
-      
       </div>
     </div>
   </section>
 
-  
   <!-- About Section -->
   <section id="about">
     <div class="container">
@@ -863,31 +806,6 @@
         <p>We specialize in personalized gifts, NFC business solutions, promotional products, restaurant branding, Google Review displays, and bespoke custom creations.</p>
         <div class="location-badge">
           <i class="fas fa-map-marker-alt" style="color: var(--accent-teal);"></i> Designed & Manufactured in Lebanon
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Gallery Section -->
-  <section id="gallery">
-    <div class="container">
-      <div class="section-header reveal">
-        <h2 class="section-title">Product Showcase</h2>
-        <p class="section-desc">A visual glimpse into our craft and precision engineering.</p>
-      </div>
-
-      <div class="gallery-grid">
-        <div class="gallery-item glass-card reveal">
-          <img src="https://images.unsplash.com/photo-1631281956016-3dad14dff15d?auto=format&fit=crop&w=600&q=80" alt="3D Printing In Action" />
-        </div>
-        <div class="gallery-item glass-card reveal">
-          <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" alt="3D Printed Prototype" />
-        </div>
-        <div class="gallery-item glass-card reveal">
-          <img src="https://images.unsplash.com/photo-1563770660941-20978e870e26?auto=format&fit=crop&w=600&q=80" alt="Modern Tech Setup" />
-        </div>
-        <div class="gallery-item glass-card reveal">
-          <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80" alt="Minimalist Product Design" />
         </div>
       </div>
     </div>
@@ -1080,7 +998,6 @@
           <ul class="footer-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#products">Products</a></li>
-            <li><a href="#custom-orders">Custom Orders</a></li>
             <li><a href="#about">About Us</a></li>
           </ul>
         </div>
@@ -1152,18 +1069,9 @@
 
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-    // Form Submission Handler (WhatsApp redirect fallback)
     function handleFormSubmit(e) {
       e.preventDefault();
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const phone = document.getElementById('phone').value;
-      const message = document.getElementById('message').value;
-
-      const formattedText = `New Inquiry from Web Form:%0A- Name: ${encodeURIComponent(name)}%0A- Email: ${encodeURIComponent(email)}%0A- Phone: ${encodeURIComponent(phone)}%0A- Message: ${encodeURIComponent(message)}`;
-      
-      // Redirect to WhatsApp with prefilled message
-      window.open(`https://wa.me/96100000000?text=${formattedText}`, '_blank');
+      alert('Thank you! Your inquiry has been sent.');
     }
   </script>
 </body>
