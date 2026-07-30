@@ -901,25 +901,26 @@
         </div>
 
         <div class="glass-card contact-form reveal">
-          <form id="orderForm" onsubmit="handleFormSubmit(event)">
+          <!-- Formspree Integration -->
+          <form action="https://formspree.io/f/xaqrzeda" method="POST">
             <div class="form-group">
               <label for="name">Name</label>
-              <input type="text" id="name" class="form-control" placeholder="Your Name" required />
+              <input type="text" id="name" name="name" class="form-control" placeholder="Your Name" required />
             </div>
 
             <div class="form-group">
               <label for="email">Email</label>
-              <input type="email" id="email" class="form-control" placeholder="your@email.com" required />
+              <input type="email" id="email" name="email" class="form-control" placeholder="your@email.com" required />
             </div>
 
             <div class="form-group">
               <label for="phone">Phone</label>
-              <input type="tel" id="phone" class="form-control" placeholder="+961 -- --- ---" required />
+              <input type="tel" id="phone" name="phone" class="form-control" placeholder="+961 -- --- ---" required />
             </div>
 
             <div class="form-group">
               <label for="message">Message</label>
-              <textarea id="message" class="form-control" placeholder="Tell us about your custom design or order inquiry..." required></textarea>
+              <textarea id="message" name="message" class="form-control" placeholder="Tell us about your custom design or order inquiry..." required></textarea>
             </div>
 
             <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
@@ -1015,11 +1016,6 @@
     }, observerOptions);
 
     document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-
-    function handleFormSubmit(e) {
-      e.preventDefault();
-      alert('Thank you! Your inquiry has been sent.');
-    }
   </script>
 </body>
 </html>
